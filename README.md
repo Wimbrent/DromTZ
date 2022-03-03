@@ -3,6 +3,7 @@
 Задание выполнино с использованием Selenium, Allure и Page Object.
 
 тз №2.1 в файле FilterTest
+
 тз №2.2 в файле AddToFavoriteListTest
 
 2.1. Дана страница продаж авто в России http://auto.drom.ru/ Отфильтровать список
