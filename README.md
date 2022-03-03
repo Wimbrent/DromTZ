@@ -1,6 +1,6 @@
 Тестовое задание выполнил Матвейчук А.С. на позицию QA.
 
-Задание выполнино с использованием Selenium, Allure и Page Object.
+Задание выполнино с использованием Selenium, Allure, TestNG, Maven и Page Object.
 
 тз №2.1 в файле FilterTest
 
