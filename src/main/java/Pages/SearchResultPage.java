@@ -48,7 +48,7 @@ public class SearchResultPage extends BasePage {
     }
 
     @Step(value = "Проверить что в результате поиска нет проданных машин.")
-    public SearchResultPage findSoldOutCars() {
+    public SearchResultPage findSoldCars() {
 
         List<String> getSoldOutCars = new ArrayList<>();
         List<WebElement> elements = driver.findElements(sold_out);
@@ -66,7 +66,7 @@ public class SearchResultPage extends BasePage {
     }
 
     @Step(value = "Проверить что в результате поиска нет машин младше 2007 года.")
-    public SearchResultPage yearCheck() {
+    public SearchResultPage checkingTheYear() {
 
         List<Integer> getYears = new ArrayList<>();
         List<WebElement> elements = driver.findElements(year);

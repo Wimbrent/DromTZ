@@ -15,7 +15,7 @@ public class SellingAutoPage extends BasePage {
 
     By carouselAuto = By.xpath("//a[@data-ftid = 'component_premium-carousel_item']");
 
-    @Step(value = "Выбрать машину из премиум объявлений (карусель).")
+    @Step(value = "Выбрать машину из премиум объявлений на главной странице")
     public void selectAutoFromCarousel(int index) {
         List<WebElement> select = driver.findElements(carouselAuto);
         select.get(index).click();

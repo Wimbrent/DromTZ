@@ -31,21 +31,21 @@ public class FilterTest extends BaseTest {
                 .enterAutoModel("Harrier") // Написать модель машины в строке поиска Модель
                 .modelFirstResult() // Выбрать первый результат поиска
                 .clickOnSelectorYearFrom()
-                .selectYearFrom(17) // Выбрать от какого года
+                .chooseYearFrom(17) // Выбрать от какого года
                 .clickOnUnsoldCheckBox() // Установить поиск по непроданным
                 .clickOnSelectFuel() // Нажать на список Топливо
-                .selectFuel(5) // Выбрать вид топлива
+                .chooseFuel(5) // Выбрать вид топлива
                 .clickOnAdvancedSearch() // Нажать на кнопку "Расширенный поиск"
-                .clickOnSelectKMFrom() // Выбрать от какого пробега
-                .selectKMFrom(0) // Выбрать от 1км
-                .clickButton(); // Нажать кнопку "Показать"
+                .clickOnChooseKMFrom() // Выбрать от какого пробега
+                .chooseKMFrom(0) // Выбрать от 1км
+                .clickOnButtonShow(); // Нажать кнопку "Показать"
         searchResultPage
                 .getKMFromDescription() // Проверка что в результате поиска все машины с пробегом
-                .findSoldOutCars() // Проверка что резульате поиска отсутствуют проданные машины
-                .yearCheck() // Проверка что в результате поиска нет машин младше 2007
+                .findSoldCars() // Проверка что резульате поиска отсутствуют проданные машины
+                .checkingTheYear() // Проверка что в результате поиска нет машин младше 2007
                 .clickOnButtonNextPage() // Нажать кнопку вперёд
                 .getKMFromDescription() // Проверка что в результате поиска все машины с пробегом
-                .findSoldOutCars() // Проверка что резульате поиска отсутствуют проданные машины
-                .yearCheck(); // Проверка что в результате поиска нет машин младше 2007
+                .findSoldCars() // Проверка что резульате поиска отсутствуют проданные машины
+                .checkingTheYear(); // Проверка что в результате поиска нет машин младше 2007
     }
 }

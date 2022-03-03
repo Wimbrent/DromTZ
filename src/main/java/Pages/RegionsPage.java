@@ -10,10 +10,10 @@ public class RegionsPage extends BasePage {
         super(driver);
     }
 
-    By Permsky_krai = By.linkText("Пермский край");
+    By Perm_krai = By.linkText("Пермский край");
 
     @Step(value = "Выбрать Пермский Край.")
-    public void selectPermsky_Krai() {
-        driver.findElement(Permsky_krai).click();
+    public void choosePerm_Krai() {
+        driver.findElement(Perm_krai).click();
     }
 }

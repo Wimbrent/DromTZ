@@ -86,7 +86,7 @@ public class Filters extends BasePage {
     }
 
     @Step(value = "Выбор топлива.")
-    public Filters selectFuel(int index) {
+    public Filters chooseFuel(int index) {
         List<WebElement> fuel = driver.findElements(selectFuel);
         fuel.get(index).click();
         return this;
@@ -99,7 +99,7 @@ public class Filters extends BasePage {
     }
 
     @Step(value = "Выбор нужного года")
-    public Filters selectYearFrom(int index) {
+    public Filters chooseYearFrom(int index) {
         List<WebElement> elements = driver.findElements(selectYearFrom);
         elements.get(index).click();
         return this;
@@ -112,13 +112,13 @@ public class Filters extends BasePage {
     }
 
     @Step(value = "Нажатие на список Пробег(от, км).")
-    public Filters clickOnSelectKMFrom() {
+    public Filters clickOnChooseKMFrom() {
         driver.findElement(km_from).click();
         return this;
     }
 
     @Step(value = "Выбор от какого пробега.")
-    public Filters selectKMFrom(int index) {
+    public Filters chooseKMFrom(int index) {
         List<WebElement> elements = driver.findElements(list_km_from);
         elements.get(index).click();
         return this;
@@ -131,7 +131,7 @@ public class Filters extends BasePage {
     }
 
     @Step(value = "Нажатие на кнопку Показать.")
-    public void clickButton() {
+    public void clickOnButtonShow() {
         driver.findElement(button).click();
     }
 
