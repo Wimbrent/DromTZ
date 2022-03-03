@@ -4,7 +4,7 @@
 
 тз №2.1 в файле FilterTest
 
-тз №2.2 в файле AddToFavoriteListTest
+тз №2.2 в файле AddToFavoriteListTest, в случае запуска ниобходимо вписать значения в login/password.
 
 2.1. Дана страница продаж авто в России http://auto.drom.ru/ Отфильтровать список
 объявлений по параметрам:
