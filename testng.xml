@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/wimbrent/IdeaProjects/Drom">
+        <classes>
+            <class name="Positive.AddToFavoriteListTest">
+                <methods>
+                    <include name="Favorite"/>
+                </methods>
+            </class>
+            <class name="Positive.FilterTest">
+                <methods>
+                    <include name="Filter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
